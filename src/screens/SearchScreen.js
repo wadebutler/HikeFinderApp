@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {Text, Input, Button} from 'react-native-elements';
+import {Text} from 'react-native-elements';
+import Search from '../Components/Search';
 
 const SearchScreen = ({navigation}) => {
     return (
         <View>
             <Text h4> Where do you want to Hike?</Text>
-            <Input label="City Name"/>
-            <Button title="search" onPress={() => navigation.navigate("Results")}/>
+            <Search />
         </View>
     )
 }
